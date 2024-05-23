@@ -1,37 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    background: linear-gradient(45deg, #8e1111, #2f5c9a);
+
 }
-
+nav{
+    display: flex;
+    justify-content:center;
+    align-items: baseline;
+}
 .calculator{
-    border: 1px solid #717377;
-    padding: 20px;
-    border-radius: 16px;
+    border: 1px solid rgb(81, 79, 79);
+    padding: 22px;
+    width: 378px;
+    border-radius: 20px;
     background: transparent;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
-
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.8);
 }
 
 input{
-    width: 320px;
+    width: 100%;
     border: none;
-    padding: 24px;
+    padding: 25px;
     margin: 10px;
     background: transparent;
-    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    box-shadow: 0px 3px 15px rgbs(84, 84 ,84 ,.1);
     font-size: 40px;
     text-align: right;
     cursor: pointer;
@@ -44,21 +47,26 @@ input::placeholder{
 
 button{
     border: none;
+    margin: 10px;
+    /* padding: 15px; */
     width: 60px;
     height: 60px;
-    margin: 10px;
-    border-radius: 50%;
-    background: transparent;
+    background:transparent;
     color: #ffffff;
-    font-size: 20px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
     cursor: pointer;
+    font-size: 20px;
+    box-shadow:-8px -8px 15px rgba(161, 147, 147, 0.1) ;
+    cursor: pointer;
+    border-radius: 30px;
+
 }
 
-.equalBtn{
-    background-color: #fb7c14;
+.eqlbtn{
+    background-color: orange;
 }
-
 .operator{
-    color: #6dee0a;
+    color: rgb(0, 255, 0);
 }
+
+
+
